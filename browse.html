@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Watcher: Browse</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<meta name="theme-color" content="#2a5bd7"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<h1>Browse open postings</h1>
+<div class="controls">
+  <button id="scope" class="on" title="Switch between postings in the Marketing Data Analyst role and all postings">In my role</button>
+  <button id="short" title="Show only starred postings">★ Shortlist (0)</button>
+  <input id="q" type="search" placeholder="Search titles" aria-label="Search titles">
+  <select id="emp" aria-label="Employer"><option value="">All employers</option></select>
+  <select id="loc" aria-label="Location"><option value="">All locations</option></select>
+  <select id="age" aria-label="Days open"><option value="">Any days open</option><option value="7">7 days or fewer</option><option value="30">30 days or fewer</option><option value="31">More than 30 days</option></select>
+  <select id="sort" aria-label="Sort"><option value="desc">Newest first</option><option value="asc">Oldest first</option></select>
+</div>
+<p class="mute small" id="count"></p><div id="jobs"></div><p><button id="more" hidden>Show more</button></p>
+<p class="mute small">Days open counts from the first-seen date. Postings already open when watching began are counted from that start.</p>
+</main><script src="app.js"></script><script>
+(async () => {
+  const $ = id => document.getElementById(id);
+  let stars = new Set();
+  try { stars = new Set(JSON.parse(localStorage.getItem("shortlist") || "[]")); } catch (e) {}
+  const saveStars = () => { try { localStorage.setItem("shortlist", JSON.stringify([...stars])); } catch (e) {} };
+  let rows;
+  try { rows = (await loadHistory()).filter(r => r.status === "open"); }
+  catch (e) { $("count").innerHTML = '<span class="err">Could not load data.</span>'; return; }
+  const today = dayNum(lastRunDate(rows) || "1970-01-01");
+  rows.forEach(r => r.age = today - dayNum(r.first_seen));
+  const fillSel = (id, key) => $(id).insertAdjacentHTML("beforeend",
+    [...new Set(rows.map(r => r[key]).filter(Boolean))].sort().map(v => `<option>${esc(v)}</option>`).join(""));
+  fillSel("emp", "employer"); fillSel("loc", "location");
+  let inRole = true, onlyShort = false, shown = 50, view = [];
+  const render = () => {
+    const q = $("q").value.trim().toLowerCase(), age = $("age").value;
+    view = rows.filter(r => (!inRole || r.in_role) && (!onlyShort || stars.has(r.posting_id)) &&
+      (!$("emp").value || r.employer === $("emp").value) && (!$("loc").value || r.location === $("loc").value) &&
+      (!q || r.title.toLowerCase().includes(q)) &&
+      (!age || (age === "31" ? r.age > 30 : r.age <= +age)));
+    const dir = $("sort").value === "asc" ? 1 : -1;
+    view.sort((a, b) => dir * (a.first_seen < b.first_seen ? -1 : a.first_seen > b.first_seen ? 1 : 0) || a.posting_id.localeCompare(b.posting_id));
+    $("count").textContent = `${view.length} postings`;
+    $("short").textContent = `★ Shortlist (${stars.size})`;
+    $("jobs").innerHTML = view.slice(0, shown).map(r => `<div class="job">
+      <button class="star${stars.has(r.posting_id) ? " on" : ""}" data-id="${esc(r.posting_id)}" aria-label="Save to shortlist" aria-pressed="${stars.has(r.posting_id)}">${stars.has(r.posting_id) ? "★" : "☆"}</button>
+      <div class="body"><div class="t">${esc(r.title)}</div><div class="mute small">${esc(r.employer)}${r.location ? " · " + esc(r.location) : ""}${r.department ? " · " + esc(r.department) : ""} · first seen ${esc(r.first_seen)} (${r.age}d)</div></div>
+      <a class="apply" href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener">Apply</a></div>`).join("") || '<p class="mute">No postings match.</p>';
+    $("more").hidden = view.length <= shown;
+  };
+  const reset = () => { shown = 50; render(); };
+  ["q", "emp", "loc", "age", "sort"].forEach(id => $(id).addEventListener("input", reset));
+  $("scope").onclick = () => { inRole = !inRole; $("scope").textContent = inRole ? "In my role" : "All postings"; $("scope").classList.toggle("on", inRole); reset(); };
+  $("short").onclick = () => { onlyShort = !onlyShort; $("short").classList.toggle("on", onlyShort); reset(); };
+  $("more").onclick = () => { shown += 50; render(); };
+  $("jobs").addEventListener("click", e => {
+    const b = e.target.closest(".star"); if (!b) return;
+    const id = b.dataset.id; stars.has(id) ? stars.delete(id) : stars.add(id); saveStars(); render();
+  });
+  render();
+})();
+</script></body></html>

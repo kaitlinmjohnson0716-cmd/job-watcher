@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Watcher: Today</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<meta name="theme-color" content="#2a5bd7"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<h1>Today</h1><p class="mute" id="when">Loading…</p>
+<div class="cards" id="cards"></div>
+<h2>Sources</h2><div class="chips" id="sources"></div>
+<h2 id="newh">New postings</h2><ul class="list" id="new"></ul>
+<h2 id="remh">Removed postings</h2><ul class="list" id="removed"></ul>
+</main><script src="app.js"></script><script>
+(async () => {
+  try {
+    const [st, rows] = await Promise.all([loadStatus(), loadHistory()]);
+    const day = st.run_time.slice(0, 10);
+    document.getElementById("when").textContent = `Last run: ${st.run_time.replace("T", " ").replace("Z", " UTC")}`;
+    const card = (n, l) => `<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`;
+    document.getElementById("cards").innerHTML = card(st.days_with_success, "days with a successful run") +
+      card(st.open, "open") + card(st.new_today, "new today") + card(st.removed_today, "removed today");
+    document.getElementById("sources").innerHTML = st.sources.map(s =>
+      `<span class="chip ${s.ok ? "ok" : "fail"}">${esc(s.name)}: ${s.ok ? s.count : "failed"}</span>`).join("");
+    const li = r => `<li><a href="${esc(safeUrl(r.url))}" rel="noopener">${esc(r.title)}</a> <span class="mute">· ${esc(r.employer)}${r.location ? " · " + esc(r.location) : ""}</span></li>`;
+    const fill = (id, hid, label, list) => {
+      document.getElementById(hid).textContent = `${label} (${list.length})`;
+      document.getElementById(id).innerHTML = list.length ? list.map(li).join("") : '<li class="mute">None.</li>';
+    };
+    fill("new", "newh", "New postings", rows.filter(r => r.first_seen === day && !r.first_run));
+    fill("removed", "remh", "Removed postings", rows.filter(r => r.removed_date === day));
+  } catch (e) { document.getElementById("when").innerHTML = '<span class="err">Could not load data.</span>'; }
+})();
+</script></body></html>
