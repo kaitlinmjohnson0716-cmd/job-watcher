@@ -1,8 +1,8 @@
 {
-  "run_time": "2026-11-03T15:56:01Z",
+  "run_time": "2026-11-03T16:04:28Z",
   "first_run_date": "2026-11-03",
   "days_with_success": 1,
-  "open": 4751,
+  "open": 4754,
   "new_today": 0,
   "removed_today": 0,
   "sources": [
@@ -39,7 +39,7 @@
     {
       "name": "Braze",
       "ok": true,
-      "count": 349
+      "count": 353
     },
     {
       "name": "Sprout Social",
@@ -54,7 +54,7 @@
     {
       "name": "Peloton",
       "ok": true,
-      "count": 56
+      "count": 55
     },
     {
       "name": "Twilio",
