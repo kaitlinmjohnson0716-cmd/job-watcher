@@ -1,5 +1,5 @@
 // Network-first for data and pages (fresh when online); cache fallback offline.
-const CACHE = "jobwatcher-v1";
+const CACHE = "jobwatcher-v2";
 const SHELL = ["./", "index.html", "browse.html", "market.html", "style.css", "app.js", "market.js",
                "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png", "data/history.csv", "data/status.json"];
 self.addEventListener("install", e => {

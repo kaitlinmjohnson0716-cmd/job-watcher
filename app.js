@@ -47,8 +47,9 @@ function barChart(labels, series, opts = {}) {
   const max = Math.max(1, ...series.flatMap(s => s.values));
   const slot = (W - L - 8) / Math.max(1, labels.length), bw = Math.max(3, slot * 0.8 / series.length);
   let g = "";
-  for (let k = 0; k <= 4; k++) {
-    const v = Math.round(max * k / 4), y = H - B - (H - B - T) * k / 4;
+  const steps = max < 4 ? max : 4;
+  for (let k = 0; k <= steps; k++) {
+    const v = Math.round(max * k / steps), y = H - B - (H - B - T) * k / steps;
     g += `<line x1="${L}" x2="${W}" y1="${y}" y2="${y}" stroke="currentColor" opacity=".12"/><text x="${L - 4}" y="${y + 4}" text-anchor="end">${v}</text>`;
   }
   labels.forEach((lab, i) => {
@@ -59,7 +60,7 @@ function barChart(labels, series, opts = {}) {
     if (labels.length <= 14 || i % Math.ceil(labels.length / 14) === 0)
       g += `<text transform="translate(${L + i * slot + slot / 2},${H - B + 12}) rotate(${opts.rotate ?? 40})" text-anchor="start">${esc(lab.length > 22 ? lab.slice(0, 21) + "…" : lab)}</text>`;
   });
-  const legend = series.length > 1 ? `<p class="legend">${series.map(s => `<span style="color:var(--${s.cls === "bar" ? "brand" : "good"})">■</span> ${esc(s.name)}`).join(" &nbsp; ")}</p>` : "";
+  const legend = series.length > 1 ? `<p class="legend">${series.map(s => `<span style="color:var(--${{bar: "blue", bar2: "green", bar3: "pink"}[s.cls]})">■</span> ${esc(s.name)}`).join(" &nbsp; ")}</p>` : "";
   return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "chart")}">${g}</svg>${legend}</div>`;
 }
 
