@@ -1,15 +1,15 @@
 {
-  "run_time": "2026-11-03T23:21:13Z",
+  "run_time": "2026-11-04T14:28:52Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 1,
-  "open": 4775,
-  "new_today": 0,
-  "removed_today": 0,
+  "days_with_success": 2,
+  "open": 4779,
+  "new_today": 45,
+  "removed_today": 41,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 212
+      "count": 211
     },
     {
       "name": "Pinterest",
@@ -19,12 +19,12 @@
     {
       "name": "Reddit",
       "ok": true,
-      "count": 162
+      "count": 163
     },
     {
       "name": "Instacart",
       "ok": true,
-      "count": 91
+      "count": 87
     },
     {
       "name": "Duolingo",
@@ -34,12 +34,12 @@
     {
       "name": "Lyft",
       "ok": true,
-      "count": 176
+      "count": 177
     },
     {
       "name": "Braze",
       "ok": true,
-      "count": 369
+      "count": 367
     },
     {
       "name": "Sprout Social",
@@ -54,22 +54,22 @@
     {
       "name": "Peloton",
       "ok": true,
-      "count": 51
+      "count": 49
     },
     {
       "name": "Twilio",
       "ok": true,
-      "count": 132
+      "count": 130
     },
     {
       "name": "Datadog",
       "ok": true,
-      "count": 398
+      "count": 394
     },
     {
       "name": "Asana",
       "ok": true,
-      "count": 109
+      "count": 110
     },
     {
       "name": "Figma",
@@ -79,22 +79,22 @@
     {
       "name": "Discord",
       "ok": true,
-      "count": 34
+      "count": 31
     },
     {
       "name": "Stripe",
       "ok": true,
-      "count": 745
+      "count": 757
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 86
+      "count": 85
     },
     {
       "name": "Palantir",
       "ok": true,
-      "count": 305
+      "count": 307
     },
     {
       "name": "Notion",
@@ -109,12 +109,12 @@
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 807
+      "count": 812
     },
     {
       "name": "Snowflake",
       "ok": true,
-      "count": 368
+      "count": 369
     }
   ]
 }
