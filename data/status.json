@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-04T23:39:01Z",
+  "run_time": "2026-11-05T14:36:57Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 2,
-  "open": 4774,
-  "new_today": 95,
-  "removed_today": 96,
+  "days_with_success": 3,
+  "open": 4783,
+  "new_today": 37,
+  "removed_today": 28,
   "sources": [
     {
       "name": "Airbnb",
@@ -14,12 +14,12 @@
     {
       "name": "Pinterest",
       "ok": true,
-      "count": 168
+      "count": 167
     },
     {
       "name": "Reddit",
       "ok": true,
-      "count": 162
+      "count": 163
     },
     {
       "name": "Instacart",
@@ -34,7 +34,7 @@
     {
       "name": "Lyft",
       "ok": true,
-      "count": 178
+      "count": 176
     },
     {
       "name": "Braze",
@@ -49,17 +49,17 @@
     {
       "name": "Squarespace",
       "ok": true,
-      "count": 23
+      "count": 22
     },
     {
       "name": "Peloton",
       "ok": true,
-      "count": 48
+      "count": 47
     },
     {
       "name": "Twilio",
       "ok": true,
-      "count": 129
+      "count": 128
     },
     {
       "name": "Datadog",
@@ -74,7 +74,7 @@
     {
       "name": "Figma",
       "ok": true,
-      "count": 145
+      "count": 144
     },
     {
       "name": "Discord",
@@ -84,12 +84,12 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 757
+      "count": 762
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 86
+      "count": 87
     },
     {
       "name": "Palantir",
@@ -99,17 +99,17 @@
     {
       "name": "Notion",
       "ok": true,
-      "count": 147
+      "count": 151
     },
     {
       "name": "Ramp",
       "ok": true,
-      "count": 170
+      "count": 171
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 809
+      "count": 813
     },
     {
       "name": "Snowflake",
