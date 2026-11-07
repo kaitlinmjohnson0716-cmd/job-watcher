@@ -77,7 +77,7 @@
   {
     "name": "Stripe",
     "ok": true,
-    "count": 765
+    "count": 766
   },
   {
     "name": "Spotify",
@@ -102,11 +102,11 @@
   {
     "name": "OpenAI",
     "ok": true,
-    "count": 820
+    "count": 819
   },
   {
     "name": "Snowflake",
     "ok": true,
-    "count": 371
+    "count": 372
   }
 ]
