@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-07T21:47:16Z",
+  "run_time": "2026-11-08T13:21:09Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 5,
-  "open": 4781,
-  "new_today": 9,
-  "removed_today": 7,
+  "days_with_success": 6,
+  "open": 4778,
+  "new_today": 1,
+  "removed_today": 4,
   "sources": [
     {
       "name": "Airbnb",
@@ -34,7 +34,7 @@
     {
       "name": "Lyft",
       "ok": true,
-      "count": 167
+      "count": 166
     },
     {
       "name": "Braze",
@@ -64,7 +64,7 @@
     {
       "name": "Datadog",
       "ok": true,
-      "count": 400
+      "count": 401
     },
     {
       "name": "Asana",
@@ -104,12 +104,12 @@
     {
       "name": "Ramp",
       "ok": true,
-      "count": 171
+      "count": 169
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 819
+      "count": 818
     },
     {
       "name": "Snowflake",
