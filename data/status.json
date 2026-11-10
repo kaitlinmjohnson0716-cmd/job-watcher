@@ -1,25 +1,25 @@
 {
-  "run_time": "2026-11-09T16:13:38Z",
+  "run_time": "2026-11-10T01:29:58Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 7,
-  "open": 4767,
-  "new_today": 24,
-  "removed_today": 35,
+  "days_with_success": 8,
+  "open": 4769,
+  "new_today": 67,
+  "removed_today": 69,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 204
+      "count": 203
     },
     {
       "name": "Pinterest",
       "ok": true,
-      "count": 168
+      "count": 170
     },
     {
       "name": "Reddit",
       "ok": true,
-      "count": 161
+      "count": 157
     },
     {
       "name": "Instacart",
@@ -29,22 +29,22 @@
     {
       "name": "Duolingo",
       "ok": true,
-      "count": 59
+      "count": 61
     },
     {
       "name": "Lyft",
       "ok": true,
-      "count": 163
+      "count": 156
     },
     {
       "name": "Braze",
       "ok": true,
-      "count": 359
+      "count": 355
     },
     {
       "name": "Sprout Social",
       "ok": true,
-      "count": 23
+      "count": 22
     },
     {
       "name": "Squarespace",
@@ -54,7 +54,7 @@
     {
       "name": "Peloton",
       "ok": true,
-      "count": 45
+      "count": 43
     },
     {
       "name": "Twilio",
@@ -64,17 +64,17 @@
     {
       "name": "Datadog",
       "ok": true,
-      "count": 404
+      "count": 400
     },
     {
       "name": "Asana",
       "ok": true,
-      "count": 108
+      "count": 112
     },
     {
       "name": "Figma",
       "ok": true,
-      "count": 144
+      "count": 145
     },
     {
       "name": "Discord",
@@ -84,12 +84,12 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 768
+      "count": 772
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 83
+      "count": 85
     },
     {
       "name": "Palantir",
@@ -104,17 +104,17 @@
     {
       "name": "Ramp",
       "ok": true,
-      "count": 169
+      "count": 171
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 815
+      "count": 822
     },
     {
       "name": "Snowflake",
       "ok": true,
-      "count": 370
+      "count": 371
     }
   ]
 }
