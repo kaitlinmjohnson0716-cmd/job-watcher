@@ -1,9 +1,9 @@
 {
-  "run_time": "2026-11-14T13:28:19Z",
+  "run_time": "2026-11-14T22:21:36Z",
   "first_run_date": "2026-11-03",
   "days_with_success": 12,
-  "open": 4745,
-  "new_today": 5,
+  "open": 4746,
+  "new_today": 6,
   "removed_today": 8,
   "sources": [
     {
@@ -109,7 +109,7 @@
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 838
+      "count": 839
     },
     {
       "name": "Snowflake",
