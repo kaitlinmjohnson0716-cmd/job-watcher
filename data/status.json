@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-14T22:21:36Z",
+  "run_time": "2026-11-15T13:54:47Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 12,
-  "open": 4746,
-  "new_today": 6,
-  "removed_today": 8,
+  "days_with_success": 13,
+  "open": 4744,
+  "new_today": 1,
+  "removed_today": 3,
   "sources": [
     {
       "name": "Airbnb",
@@ -59,7 +59,7 @@
     {
       "name": "Twilio",
       "ok": true,
-      "count": 115
+      "count": 114
     },
     {
       "name": "Datadog",
@@ -84,7 +84,7 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 786
+      "count": 785
     },
     {
       "name": "Spotify",
@@ -99,7 +99,7 @@
     {
       "name": "Notion",
       "ok": true,
-      "count": 166
+      "count": 165
     },
     {
       "name": "Ramp",
@@ -109,7 +109,7 @@
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 839
+      "count": 840
     },
     {
       "name": "Snowflake",
