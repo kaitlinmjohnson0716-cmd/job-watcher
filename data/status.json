@@ -1,15 +1,15 @@
 {
-  "run_time": "2026-11-15T13:54:47Z",
+  "run_time": "2026-11-15T22:46:41Z",
   "first_run_date": "2026-11-03",
   "days_with_success": 13,
-  "open": 4744,
-  "new_today": 1,
-  "removed_today": 3,
+  "open": 4740,
+  "new_today": 2,
+  "removed_today": 8,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 214
+      "count": 213
     },
     {
       "name": "Pinterest",
@@ -104,12 +104,12 @@
     {
       "name": "Ramp",
       "ok": true,
-      "count": 180
+      "count": 179
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 840
+      "count": 838
     },
     {
       "name": "Snowflake",
