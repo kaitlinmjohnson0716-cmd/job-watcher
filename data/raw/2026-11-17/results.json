@@ -2,17 +2,17 @@
   {
     "name": "Airbnb",
     "ok": true,
-    "count": 210
+    "count": 205
   },
   {
     "name": "Pinterest",
     "ok": true,
-    "count": 165
+    "count": 168
   },
   {
     "name": "Reddit",
     "ok": true,
-    "count": 148
+    "count": 149
   },
   {
     "name": "Instacart",
@@ -27,12 +27,12 @@
   {
     "name": "Lyft",
     "ok": true,
-    "count": 145
+    "count": 144
   },
   {
     "name": "Braze",
     "ok": true,
-    "count": 334
+    "count": 335
   },
   {
     "name": "Sprout Social",
@@ -47,17 +47,17 @@
   {
     "name": "Peloton",
     "ok": true,
-    "count": 36
+    "count": 37
   },
   {
     "name": "Twilio",
     "ok": true,
-    "count": 111
+    "count": 109
   },
   {
     "name": "Datadog",
     "ok": true,
-    "count": 382
+    "count": 380
   },
   {
     "name": "Asana",
@@ -77,12 +77,12 @@
   {
     "name": "Stripe",
     "ok": true,
-    "count": 789
+    "count": 792
   },
   {
     "name": "Spotify",
     "ok": true,
-    "count": 88
+    "count": 87
   },
   {
     "name": "Palantir",
@@ -102,11 +102,11 @@
   {
     "name": "OpenAI",
     "ok": true,
-    "count": 839
+    "count": 841
   },
   {
     "name": "Snowflake",
     "ok": true,
-    "count": 373
+    "count": 379
   }
 ]
