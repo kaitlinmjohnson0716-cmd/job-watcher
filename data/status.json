@@ -1,25 +1,25 @@
 {
-  "run_time": "2026-11-19T15:41:50Z",
+  "run_time": "2026-11-20T00:36:12Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 17,
-  "open": 4722,
-  "new_today": 66,
-  "removed_today": 104,
+  "days_with_success": 18,
+  "open": 4733,
+  "new_today": 73,
+  "removed_today": 69,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 197
+      "count": 201
     },
     {
       "name": "Pinterest",
       "ok": true,
-      "count": 173
+      "count": 175
     },
     {
       "name": "Reddit",
       "ok": true,
-      "count": 145
+      "count": 143
     },
     {
       "name": "Instacart",
@@ -34,12 +34,12 @@
     {
       "name": "Lyft",
       "ok": true,
-      "count": 147
+      "count": 144
     },
     {
       "name": "Braze",
       "ok": true,
-      "count": 329
+      "count": 332
     },
     {
       "name": "Sprout Social",
@@ -54,27 +54,27 @@
     {
       "name": "Peloton",
       "ok": true,
-      "count": 36
+      "count": 37
     },
     {
       "name": "Twilio",
       "ok": true,
-      "count": 108
+      "count": 107
     },
     {
       "name": "Datadog",
       "ok": true,
-      "count": 378
+      "count": 379
     },
     {
       "name": "Asana",
       "ok": true,
-      "count": 116
+      "count": 113
     },
     {
       "name": "Figma",
       "ok": true,
-      "count": 143
+      "count": 145
     },
     {
       "name": "Discord",
@@ -84,32 +84,32 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 782
+      "count": 771
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 91
+      "count": 94
     },
     {
       "name": "Palantir",
       "ok": true,
-      "count": 308
+      "count": 307
     },
     {
       "name": "Notion",
       "ok": true,
-      "count": 168
+      "count": 167
     },
     {
       "name": "Ramp",
       "ok": true,
-      "count": 182
+      "count": 184
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 834
+      "count": 849
     },
     {
       "name": "Snowflake",
