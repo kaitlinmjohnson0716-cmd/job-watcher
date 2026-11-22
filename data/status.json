@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-21T23:13:11Z",
+  "run_time": "2026-11-22T14:31:38Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 19,
-  "open": 4782,
-  "new_today": 8,
-  "removed_today": 9,
+  "days_with_success": 20,
+  "open": 4778,
+  "new_today": 0,
+  "removed_today": 4,
   "sources": [
     {
       "name": "Airbnb",
@@ -34,7 +34,7 @@
     {
       "name": "Lyft",
       "ok": true,
-      "count": 148
+      "count": 145
     },
     {
       "name": "Braze",
@@ -84,7 +84,7 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 778
+      "count": 777
     },
     {
       "name": "Spotify",
