@@ -1,15 +1,15 @@
 {
-  "run_time": "2026-11-22T14:31:38Z",
+  "run_time": "2026-11-22T23:35:29Z",
   "first_run_date": "2026-11-03",
   "days_with_success": 20,
-  "open": 4778,
-  "new_today": 0,
-  "removed_today": 4,
+  "open": 4780,
+  "new_today": 8,
+  "removed_today": 10,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 202
+      "count": 203
     },
     {
       "name": "Pinterest",
@@ -84,7 +84,7 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 777
+      "count": 778
     },
     {
       "name": "Spotify",
