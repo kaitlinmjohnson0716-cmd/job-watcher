@@ -1,35 +1,35 @@
 {
-  "run_time": "2026-11-25T17:10:21Z",
+  "run_time": "2026-11-26T01:45:54Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 23,
-  "open": 4785,
-  "new_today": 67,
-  "removed_today": 67,
+  "days_with_success": 24,
+  "open": 4797,
+  "new_today": 29,
+  "removed_today": 22,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 198
+      "count": 199
     },
     {
       "name": "Pinterest",
       "ok": true,
-      "count": 167
+      "count": 166
     },
     {
       "name": "Reddit",
       "ok": true,
-      "count": 146
+      "count": 149
     },
     {
       "name": "Instacart",
       "ok": true,
-      "count": 98
+      "count": 97
     },
     {
       "name": "Duolingo",
       "ok": true,
-      "count": 53
+      "count": 54
     },
     {
       "name": "Lyft",
@@ -39,7 +39,7 @@
     {
       "name": "Braze",
       "ok": true,
-      "count": 351
+      "count": 352
     },
     {
       "name": "Sprout Social",
@@ -54,7 +54,7 @@
     {
       "name": "Peloton",
       "ok": true,
-      "count": 41
+      "count": 40
     },
     {
       "name": "Twilio",
@@ -64,7 +64,7 @@
     {
       "name": "Datadog",
       "ok": true,
-      "count": 390
+      "count": 392
     },
     {
       "name": "Asana",
@@ -74,7 +74,7 @@
     {
       "name": "Figma",
       "ok": true,
-      "count": 144
+      "count": 142
     },
     {
       "name": "Discord",
@@ -84,12 +84,12 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 770
+      "count": 772
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 92
+      "count": 96
     },
     {
       "name": "Palantir",
@@ -99,22 +99,22 @@
     {
       "name": "Notion",
       "ok": true,
-      "count": 172
+      "count": 174
     },
     {
       "name": "Ramp",
       "ok": true,
-      "count": 182
+      "count": 183
     },
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 877
+      "count": 876
     },
     {
       "name": "Snowflake",
       "ok": true,
-      "count": 368
+      "count": 369
     }
   ]
 }
