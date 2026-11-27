@@ -1,15 +1,15 @@
 {
-  "run_time": "2026-11-26T16:51:12Z",
+  "run_time": "2026-11-27T01:43:40Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 24,
-  "open": 4802,
-  "new_today": 48,
-  "removed_today": 37,
+  "days_with_success": 25,
+  "open": 4803,
+  "new_today": 6,
+  "removed_today": 6,
   "sources": [
     {
       "name": "Airbnb",
       "ok": true,
-      "count": 201
+      "count": 202
     },
     {
       "name": "Pinterest",
@@ -39,7 +39,7 @@
     {
       "name": "Braze",
       "ok": true,
-      "count": 350
+      "count": 351
     },
     {
       "name": "Sprout Social",
@@ -64,12 +64,12 @@
     {
       "name": "Datadog",
       "ok": true,
-      "count": 391
+      "count": 390
     },
     {
       "name": "Asana",
       "ok": true,
-      "count": 109
+      "count": 107
     },
     {
       "name": "Figma",
@@ -114,7 +114,7 @@
     {
       "name": "Snowflake",
       "ok": true,
-      "count": 375
+      "count": 377
     }
   ]
 }
