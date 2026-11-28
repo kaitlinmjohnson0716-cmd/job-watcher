@@ -1,9 +1,9 @@
 {
-  "run_time": "2026-11-28T01:27:02Z",
+  "run_time": "2026-11-28T15:28:42Z",
   "first_run_date": "2026-11-03",
   "days_with_success": 26,
-  "open": 4811,
-  "new_today": 9,
+  "open": 4813,
+  "new_today": 11,
   "removed_today": 2,
   "sources": [
     {
@@ -64,7 +64,7 @@
     {
       "name": "Datadog",
       "ok": true,
-      "count": 390
+      "count": 392
     },
     {
       "name": "Asana",
