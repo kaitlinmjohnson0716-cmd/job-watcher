@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-27T16:37:18Z",
+  "run_time": "2026-11-28T01:27:02Z",
   "first_run_date": "2026-11-03",
-  "days_with_success": 25,
-  "open": 4802,
-  "new_today": 18,
-  "removed_today": 21,
+  "days_with_success": 26,
+  "open": 4811,
+  "new_today": 9,
+  "removed_today": 2,
   "sources": [
     {
       "name": "Airbnb",
@@ -84,12 +84,12 @@
     {
       "name": "Stripe",
       "ok": true,
-      "count": 764
+      "count": 771
     },
     {
       "name": "Spotify",
       "ok": true,
-      "count": 97
+      "count": 98
     },
     {
       "name": "Palantir",
@@ -109,7 +109,7 @@
     {
       "name": "OpenAI",
       "ok": true,
-      "count": 875
+      "count": 876
     },
     {
       "name": "Snowflake",
